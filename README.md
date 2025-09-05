@@ -9,7 +9,6 @@ It showcases my work as a **DevOps Engineer**, highlighting my skills in automat
 I’m **Youssef Moussa**, a DevOps engineer passionate about:
 - Designing **scalable infrastructures**  
 - Automating **CI/CD pipelines**  
-- Building **cloud-native solutions**  
 - Enabling **faster, reliable deployments**
 
 This portfolio will continue to evolve as I add more features, case studies, and project details.
