@@ -17,6 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend-tribe-single-page-dev-portfolio-resource-bundle/starter-template
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,7 +28,6 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          cd frontend-tribe-single-page-dev-portfolio-resource-bundle/starter-template
           if [ -f "yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
@@ -59,20 +62,17 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
       - name: Install dependencies
-        run: |
-          cd frontend-tribe-single-page-dev-portfolio-resource-bundle/starter-template
-          ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
         run: |
-          cd frontend-tribe-single-page-dev-portfolio-resource-bundle/starter-template
           ${{ steps.detect-package-manager.outputs.runner }} next build
           ${{ steps.detect-package-manager.outputs.runner }} next export -o out
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend-tribe-single-page-dev-portfolio-resource-bundle/starter-template/out
+          path: out
 
   deploy:
     environment:
