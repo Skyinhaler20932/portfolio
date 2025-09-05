@@ -38,9 +38,6 @@ jobs:
       - name: Build Next.js
         run: npx next build
 
-      - name: Export static site
-        run: npx next export
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
