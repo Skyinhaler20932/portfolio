@@ -18,7 +18,7 @@ export const ContactSection = () => {
         Whether it’s containerization with Docker and Kubernetes, 
         automation with Ansible and Terraform, or building robust 
         monitoring and CI/CD pipelines, 
-        I’m here to help your team systems to the next level.
+        {"I’m here to help your team systems to the next level."}
       </p>
       </div>
       <div>

@@ -47,7 +47,7 @@ export const TestimonialsSection = () => {
   <div className="py-16 lg:py-24">
     <div className="container">
       <SectionHeader rich eyebrow="Testimonials <br /> & <br /> Recommendations" 
-      title="Don’t just take my word for it.<br /> See what others say about working with me." description="Explore feedback from colleagues, managers, and clients on my work in
+      title={"Don’t just take my word for it.<br /> See what others say about working with me."} description="Explore feedback from colleagues, managers, and clients on my work in
       <strong>DevOps engineering</strong>, <strong>cloud automation</strong>, and
       <strong>CI/CD pipelines</strong>. These testimonials reflect my focus on
       building scalable infrastructure, improving deployment efficiency, and

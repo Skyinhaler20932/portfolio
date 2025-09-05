@@ -61,7 +61,7 @@ export const HeroSection = () => {
       </div>
       </div>
       <div className="max-w-lg mx-auto">
-      <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">I’m Youssef <br /> DevOps engineer </h1>
+      <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">{"I’m Youssef"} <br /> DevOps engineer </h1>
       <p className="mt-4 text-center text-white/60 md:text-lg">
         I design scalable infrastructures, automate workflows, and ensure reliable deployments 
         that help teams move faster with confidence.
@@ -75,7 +75,7 @@ export const HeroSection = () => {
         </button>
         <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
           <span>👋🏾</span>
-          <span className="font-semibold"> Let's Connect</span>
+          <span className="font-semibold"> {"Let's Connect"}</span>
         </button>
       </div>
     </div>
