@@ -1,4 +1,4 @@
-import SpringImage from "@/assets/images/springPetClinic.png";
+import SpringImage from "@/assets/images/spring-pet-clinic.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
