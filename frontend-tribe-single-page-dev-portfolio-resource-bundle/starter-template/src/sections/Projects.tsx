@@ -1,4 +1,4 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
+import SpringImage from '@/assets/images/springPetClinic.png'
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
@@ -10,16 +10,17 @@ import { Card } from "@/components/Cards";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Independent",
+    year: "2025",
+    title: "Spring petclinic",
     results: [
-      { title: "Enhanced user experience by 40%" },
+      { title: "Reduced the image size by >80%" },
       { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Created volumes for data persistance" },
+      { title: "Improved building using Docker compose" },
     ],
     link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    image: SpringImage,
   },
   {
     company: "Innovative Co",

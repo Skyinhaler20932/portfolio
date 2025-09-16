@@ -6,22 +6,22 @@ import MeetIcon from '@/assets/icons/google-meet-svgrepo-com.svg';
 const footerLinks = [
   {
     title: 'LinkedIn',
-    href: '#',
+    href: 'https://www.linkedin.com/in/youssef-moussa-83397a358/',
     icon: LinkedIcon,
   },
   {
     title: 'GitHub',
-    href: '#',
+    href: 'https://github.com/Skyinhaler20932',
     icon: GitIcon,
   },
   {
     title: 'Email',
-    href: '#',
+    href: 'mailto:youssef.aboubaker8@gmail.com',
     icon: EmailIcon,
   },
   {
     title: 'Meet',
-    href: '#',
+    href: 'https://calendar.app.google/qcKUEpqKCsN9Y5on8',
     icon: MeetIcon,
   },
 ];
@@ -29,7 +29,7 @@ const footerLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="relative -z-10 overflow-x-clip">
+    <footer className="relative  overflow-x-clip">
       <div className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30
       [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] -z-10"></div>
       <div className="container">
@@ -43,9 +43,11 @@ export const Footer = () => {
                   href={link.href}
                   key={link.title}
                   aria-label={link.title}
-                >
+                  target="_blank"
+                  rel="noopener noreferrer"
+                > <span>
                   <Icon className="size-5" />
-                  <span className="sr-only">{link.title}</span>
+                  </span>
                 </a>
               );
             })}
