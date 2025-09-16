@@ -50,8 +50,8 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return ( 
-    <section className="pb-16 lg:py-24">
-      <div className="container ">
+    <section className="pb-16 lg:py-24" id="projects">
+      <div className="container">
        
         <SectionHeader
             rich

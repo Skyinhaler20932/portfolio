@@ -68,15 +68,29 @@ export const HeroSection = () => {
       </p>
       </div>
       <div className=" flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-        <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-          {/* span used to help in positioning the icon with the button */} 
+        <a href="https://drive.google.com/uc?export=download&id=152MsjKHDUQecPAxqTVVbHD7VjyupZDdn"
+           target="_blank" 
+           rel="noopener noreferrer" 
+           className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
           <span className="font-semibold"> Download My CV</span>
           <ArrowDown className="size-4" />
-        </button>
-        <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-          <span>👋🏾</span>
-          <span className="font-semibold"> {"Let's Connect"}</span>
-        </button>
+        </a>
+
+
+
+
+<a href="https://www.linkedin.com/in/youssef-moussa-83397a358/"
+   target="_blank" 
+   rel="noopener noreferrer" 
+   className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+  <span>👋🏾</span>
+  <span className="font-semibold"> {"Let's Connect"}</span>
+</a>
+
+
+
+
+
       </div>
     </div>
   </div>;
