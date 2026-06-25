@@ -14,10 +14,16 @@ export default function ContactForm() {
     setStatus("sending")
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, subject, message }),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "contact",
+          name,
+          email,
+          subject,
+          message,
+        }).toString(),
       })
 
       if (!res.ok) throw new Error()
@@ -33,7 +39,8 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-[calc(600*var(--u))] flex flex-col gap-[calc(20*var(--u))]">
+    <form onSubmit={handleSubmit} data-netlify="true" name="contact" className="w-full max-w-[calc(600*var(--u))] flex flex-col gap-[calc(20*var(--u))]">
+      <input type="hidden" name="form-name" value="contact" />
       <div className="flex flex-col gap-[calc(8*var(--u))]">
         <label className="hw-mono text-[calc(14*var(--u))] tracking-[0.12em] opacity-60">NAME</label>
         <input
